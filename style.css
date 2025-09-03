@@ -1,0 +1,62 @@
+/* Global */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Noto Sans Bengali,sans-serif;}
+body{line-height:1.6;background:#f9f9f9;color:#333;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3{margin-bottom:15px;}
+section{padding:50px 20px;max-width:1200px;margin:auto;}
+
+/* Navbar */
+.navbar{display:flex;justify-content:space-between;align-items:center;background:#0066cc;color:#fff;padding:15px 20px;}
+.navbar .logo{font-size:20px;font-weight:bold;color:#fff;}
+.nav-links{display:flex;list-style:none;}
+.nav-links li{margin-left:20px;}
+.nav-links a{color:#fff;font-weight:500;transition:0.3s;}
+.nav-links a:hover{color:#ffd700;}
+.menu-toggle{display:none;font-size:24px;background:none;border:none;color:#fff;cursor:pointer;}
+
+/* Hero */
+.hero{background:linear-gradient(to right,#0073e6,#00bfff);color:white;text-align:center;padding:80px 20px;border-radius:0 0 20px 20px;}
+.hero h1{font-size:36px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:30px;}
+.hero-buttons .btn{display:inline-block;margin:10px;padding:12px 20px;border-radius:8px;font-weight:bold;transition:0.3s;}
+.primary-btn{background:#ffd700;color:#333;}
+.primary-btn:hover{background:#ffcc00;}
+.secondary-btn{background:white;color:#0066cc;}
+.secondary-btn:hover{background:#e6f2ff;}
+.tertiary-btn{background:#333;color:white;}
+.tertiary-btn:hover{background:#555;}
+
+/* Courses */
+.courses h2{text-align:center;margin-bottom:30px;font-size:28px;color:#0066cc;}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.course-card{background:white;padding:20px;border-radius:10px;text-align:center;box-shadow:0 3px 8px rgba(0,0,0,0.1);transition:transform 0.3s;}
+.course-card:hover{transform:translateY(-5px);}
+.course-card a{color:#0066cc;font-weight:bold;font-size:18px;}
+
+/* About, FAQ, Contact, Login, Signup */
+.about{text-align:center;background:#fff;border-radius:10px;padding:40px;box-shadow:0 3px 8px rgba(0,0,0,0.1);}
+.faq{max-width:800px;margin:auto;}
+.faq-item{background:#fff;padding:15px 20px;margin-bottom:10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);cursor:pointer;}
+.faq-question{font-size:18px;font-weight:bold;}
+.faq-answer{display:none;margin-top:10px;font-size:16px;color:#555;}
+.faq-item.open .faq-answer{display:block;}
+.contact form,.login form,.signup form{max-width:500px;margin:auto;background:#fff;padding:25px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);}
+.contact input,.contact textarea,.contact button,.login input,.login button,.signup input,.signup button{width:100%;margin-bottom:15px;padding:12px;border-radius:6px;border:1px solid #ccc;}
+.contact button,.login button,.signup button{background:#0066cc;color:white;font-weight:bold;border:none;cursor:pointer;}
+.contact button:hover,.login button:hover,.signup button:hover{background:#004d99;}
+
+/* Course Details */
+.course-detail{max-width:800px;margin:auto;background:#fff;padding:40px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);}
+.course-detail h1{color:#0066cc;margin-bottom:20px;}
+.course-detail ul{margin-top:15px;}
+.course-detail ul li{margin-bottom:10px;list-style:disc;margin-left:20px;}
+
+/* Footer */
+footer{text-align:center;background:#0066cc;color:white;padding:15px;margin-top:30px;border-radius:10px;}
+
+/* Responsive */
+@media(max-width:768px){
+.nav-links{display:none;flex-direction:column;background:#0066cc;position:absolute;top:60px;right:0;width:200px;padding:15px;}
+.nav-links.active{display:flex;}
+.menu-toggle{display:block;}
+}
